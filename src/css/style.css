@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+.form-widget {
+    margin-left: 40px;
+}
+.btn {
+    margin-top: 150px;
+    position: relative;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 18px;
+    line-height: 20px;
+    border: 1px solid #ced4da;
+    background-color: #dc3545;
+    color: white;
+    border-radius: .40rem;
+    width: 300px;
+}
+
+.btn:hover {
+    background-color: #c7303f;
+}
+
+.btn:active {
+    background-color: #b62b39;
+}
+
+.popover-item {
+    position: absolute;
+    width: 260px;
+    min-height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgb(242, 234, 234);
+    color: black;
+}
+.popover-arrow::after {
+    content: '';
+    bottom: -10px; /* Положение стрелочки относительно элемента */
+    left: calc(50% - 5px); /* Центр стрелочки */
+    border-width: 10px 5px 0 5px; /* Размеры стрелочки */
+    border-color: transparent transparent black transparent; /* Цвета границ стрелочки */
+    position: absolute;
+  }
+
+.popover-header {
+    background-color: #e9ecef;
+    height: 35px;
+    padding: 8px 16px;
+    color: rgb(0, 0, 0);
+}
+
+.popover-text {
+    font-size: 16px;
+    padding: 8px 16px;
+    position: relative;
+}
+
+.popover-arrow {
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #f8f8f8;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px; 
+  }
+    
+.popover-arrow::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid white;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2px; 
+  }
